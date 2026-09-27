@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mariam Academy | منصة مريم التعليمية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#ad3f5e;--wine2:#c25170;--ink:#24212a;--muted:#77727a;--cream:#fff8f8;--pink:#f9e9ed;--line:#eee3e6;--white:#fff;--shadow:0 14px 40px rgba(83,38,52,.10)}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Cairo,Arial,sans-serif}
+a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}
+.container{width:min(1180px,92%);margin:auto}.topbar{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;background:#fff;position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:10px;color:var(--wine);font-family:"Playfair Display",serif;font-weight:700;letter-spacing:2px;font-size:22px}.brand small{display:block;font-family:Cairo;font-size:9px;letter-spacing:3px;text-align:center;margin-top:-4px}.cap{font-size:28px}.links{display:flex;gap:28px;font-size:14px;color:#4f4a51}.links a.active{color:var(--wine);font-weight:700}.actions{display:flex;gap:10px}.btn{border:0;border-radius:12px;padding:11px 20px;font-weight:700}.btn.primary{background:var(--wine);color:white;box-shadow:0 8px 20px rgba(173,63,94,.18)}.btn.ghost{background:#fff;color:var(--wine);border:1px solid #dba6b5}.hero{margin-top:22px;border-radius:25px;min-height:410px;display:flex;align-items:center;overflow:hidden;position:relative;background:linear-gradient(90deg,#fff4f5 0%,#fff8f8 43%,#f7e7e9 100%);box-shadow:var(--shadow)}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 45%,rgba(255,255,255,.7),transparent 32%);pointer-events:none}.hero-copy{width:56%;padding:55px 58px;position:relative;z-index:2}.eyebrow{color:var(--wine);font-weight:800;font-size:14px;margin-bottom:10px}.hero h1{font-size:47px;line-height:1.2;margin:0 0 15px;font-weight:800}.hero h1 span{color:var(--wine)}.hero p{color:#615b62;font-size:17px;line-height:2;margin:0 0 25px}.hero-art{position:absolute;left:0;bottom:0;width:48%;height:100%;background:linear-gradient(90deg,rgba(255,248,248,.1),rgba(255,248,248,.8)),url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=80") center/cover;opacity:.78}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:18px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.benefit{background:white;padding:23px;text-align:center}.icon{width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:var(--pink);display:grid;place-items:center;color:var(--wine);font-size:20px}.benefit b{display:block;font-size:15px}.benefit span{font-size:12px;color:var(--muted)}.section{padding:52px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-head h2{font-size:27px;margin:0}.section-head p{color:var(--muted);margin:5px 0 0}.course-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 7px 24px rgba(83,38,52,.06);transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.cover{height:145px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;top:10px;right:10px;background:#fff;color:var(--wine);border-radius:8px;padding:5px 9px;font-size:11px;font-weight:800}.card-body{padding:15px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:12px;line-height:1.8;min-height:43px}.meta{display:flex;justify-content:space-between;margin:13px 0;font-size:12px;color:#777}.price{font-weight:800;color:var(--ink);font-size:15px}.rate{color:#d99a1e}.full{width:100%}.about{background:var(--cream);border-radius:25px;padding:42px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}.about h2{font-size:31px;margin:0 0 10px}.about p{color:#6d666d;line-height:2}.quote{background:white;border:1px solid var(--line);border-radius:20px;padding:30px;font-size:22px;font-weight:800;line-height:1.8;color:var(--wine);box-shadow:var(--shadow)}footer{background:#241f24;color:#eee;padding:35px 0;margin-top:40px}.footer-in{display:flex;justify-content:space-between;align-items:center}.modal{position:fixed;inset:0;background:rgba(20,15,18,.5);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.modal.show{display:flex}.modal-box{background:white;width:min(430px,100%);border-radius:20px;padding:25px}.modal-box h2{margin-top:0}.field{margin:12px 0}.field label{display:block;font-size:12px;margin-bottom:6px}.field input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;outline:none}.close{float:left;border:0;background:#f5eef0;border-radius:50%;width:32px;height:32px}.toast{position:fixed;bottom:22px;right:22px;background:#241f24;color:#fff;padding:13px 18px;border-radius:12px;display:none;z-index:60}
+@media(max-width:900px){.links{display:none}.hero{min-height:510px}.hero-copy{width:100%;padding:42px 28px;align-self:flex-start}.hero-art{width:100%;height:45%;top:auto;opacity:.28}.hero h1{font-size:36px}.benefits{grid-template-columns:repeat(2,1fr)}.course-grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}}
+@media(max-width:560px){.topbar{height:65px}.actions .ghost{display:none}.hero{margin-top:12px;min-height:510px}.hero-copy{padding:32px 22px}.hero h1{font-size:31px}.hero p{font-size:14px}.benefits{grid-template-columns:repeat(2,1fr)}.course-grid{grid-template-columns:1fr}.section{padding:35px 0}.about{padding:25px}.footer-in{flex-direction:column;gap:15px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="#"><span class="cap">🎓</span><span>MARIAM<small>ACADEMY</small></span></a>
+<nav class="links"><a class="active" href="#home">الرئيسية</a><a href="#courses">الكورسات</a><a href="#exams">الامتحانات</a><a href="#about">من نحن</a></nav>
+<div class="actions"><button class="btn ghost" onclick="openModal()">تسجيل الدخول</button><button class="btn primary" onclick="scrollToCourses()">ابدأ الآن</button></div>
+</div></header>
+
+<main id="home" class="container">
+<section class="hero">
+<div class="hero-art"></div>
+<div class="hero-copy">
+<div class="eyebrow">MARIAM ACADEMY</div>
+<h1>اتعلم <span>مع مريم</span><br>بطريقة أسهل وأقرب ليك</h1>
+<p>كورسات تعليمية شاملة • فيديوهات منظمة • ملازم وامتحانات<br>متابعة مستمرة • في أي وقت ومن أي مكان</p>
+<button class="btn primary" onclick="scrollToCourses()">ابدأ التعلم الآن</button>
+<button class="btn ghost" onclick="openModal()">تسجيل الدخول</button>
+</div></section>
+
+<section class="benefits">
+<div class="benefit"><div class="icon">◷</div><b>تعلم في أي وقت</b><span>من أي مكان</span></div>
+<div class="benefit"><div class="icon">♧</div><b>متابعة شخصية</b><span>دعم ومتابعة مستمرة</span></div>
+<div class="benefit"><div class="icon">✓</div><b>امتحانات وتقييم</b><span>اختبر مستواك باستمرار</span></div>
+<div class="benefit"><div class="icon">▤</div><b>كورسات متكاملة</b><span>شرح مبسط ومنظم</span></div>
+</section>
+
+<section class="section" id="courses">
+<div class="section-head"><div><h2>الكورسات المتاحة</h2><p>اختار الكورس وابدأ رحلتك</p></div><button class="btn ghost" onclick="toast('سيتم عرض كل الكورسات قريبًا')">عرض كل الكورسات ←</button></div>
+<div class="course-grid">
+<article class="card"><div class="cover" style="background-image:url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=700&q=80')"><span class="tag">الأكثر طلبًا</span></div><div class="card-body"><h3>كيمياء 2</h3><p>شرح شامل مع ملخصات وحل أمثلة وامتحانات.</p><div class="meta"><span>24 درس</span><span class="rate">★ 5.0</span></div><div class="meta"><span class="price">EGP 300</span></div><button class="btn primary full" onclick="enroll('كيمياء 2')">اشترك الآن</button></div></article>
+<article class="card"><div class="cover" style="background-image:url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=700&q=80')"></div><div class="card-body"><h3>أحياء</h3><p>شرح شامل مع ملخصات وحل أمثلة وامتحانات.</p><div class="meta"><span>18 درس</span><span class="rate">★ 4.9</span></div><div class="meta"><span class="price">EGP 250</span></div><button class="btn primary full" onclick="enroll('أحياء')">اشترك الآن</button></div></article>
+<article class="card"><div class="cover" style="background-image:url('https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=700&q=80')"></div><div class="card-body"><h3>تشريح</h3><p>شرح شامل مع ملخصات وحل أمثلة وامتحانات.</p><div class="meta"><span>20 درس</span><span class="rate">★ 5.0</span></div><div class="meta"><span class="price">EGP 250</span></div><button class="btn primary full" onclick="enroll('تشريح')">اشترك الآن</button></div></article>
+<article class="card"><div class="cover" style="background-image:url('https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=700&q=80')"></div><div class="card-body"><h3>ماث</h3><p>شرح شامل مع ملخصات وحل أمثلة وامتحانات.</p><div class="meta"><span>22 درس</span><span class="rate">★ 4.8</span></div><div class="meta"><span class="price">EGP 200</span></div><button class="btn primary full" onclick="enroll('ماث')">اشترك الآن</button></div></article>
+</div></section>
+
+<section class="section" id="about"><div class="about"><div><h2>كل اللي تحتاجه في مكان واحد.</h2><p>كورسات، دروس، ملفات، تدريبات وامتحانات — بتنظيم بسيط يخليك تركز في التعلم بدل ما تضيع وقتك في البحث.</p><button class="btn primary" onclick="scrollToCourses()">اكتشف الكورسات</button></div><div class="quote">“التعلم أحسن لما كل حاجة تكون واضحة قدامك.”</div></div></section>
+<section id="exams" class="section"><div class="section-head"><div><h2>الامتحانات والتقييم</h2><p>اختبر مستواك وتابع تقدمك.</p></div><button class="btn primary" onclick="openModal()">دخول الطالب</button></div></section>
+</main>
+<footer><div class="container footer-in"><div class="brand" style="color:#fff">🎓 MARIAM ACADEMY</div><div>منصة مريم التعليمية © 2026</div></div></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><h2>أهلًا بيك 👋</h2><p style="color:#777">سجل دخولك للوصول للكورسات.</p><div class="field"><label>البريد الإلكتروني</label><input type="email" placeholder="example@email.com"></div><div class="field"><label>كلمة المرور</label><input type="password" placeholder="••••••••"></div><button class="btn primary full" onclick="login()">تسجيل الدخول</button></div></div>
+<div class="toast" id="toast"></div>
+<script>
+function openModal(){document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function scrollToCourses(){document.getElementById('courses').scrollIntoView({behavior:'smooth'})}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2200)}
+function login(){closeModal();toast('تم تسجيل الدخول تجريبيًا — هنربطه بالحسابات الحقيقية في المرحلة التالية.')}
+function enroll(name){toast('تم اختيار كورس '+name+' — خطوة الدفع والتفعيل هتتربط بالـBackend.')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()})
+</script>
+</body></html>
