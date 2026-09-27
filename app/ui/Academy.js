@@ -118,13 +118,13 @@ export default function Academy() {
       if (!mounted) return;
 
       setSession(data.session);
+      setLoading(false);
 
       if (data.session?.user) {
-        await loadProfile(data.session.user);
+        loadProfile(data.session.user);
       }
 
-      await loadCourses();
-      setLoading(false);
+      loadCourses();
     }
 
     start();
