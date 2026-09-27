@@ -90,7 +90,7 @@ export default function Academy() {
   const [courses, setCourses] = useState([]);
   const [modal, setModal] = useState(null);
   const [authMode, setAuthMode] = useState("login");
-  const [loading, setLoading] = useState(fales);
+  const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState("");
   const [teacherOpen, setTeacherOpen] = useState(false);
 
