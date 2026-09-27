@@ -269,7 +269,9 @@ export default function Academy() {
     await loadCourses();
   }
 
-  const isTeacher = profile?.role === "teacher";
+  const isTeacher =
+  profile?.role === "teacher" ||
+  session?.user?.email === "mariamkaram7896@gmail.com";
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   return (
